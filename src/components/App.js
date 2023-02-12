@@ -18,25 +18,25 @@ import React, {Component} from "react";
 import { render } from "react-dom";
 import '../styles/App.css';
 
-class App extends Component {
+class App extends React.Component {
   constructor(){
     super()
     this.state={
-      classStyle:"redcolor"
+      classStyle:"redColor"
     }
   }
   changeClassStyle=()=>{
-    if(this.state.classStyle==="redcolor")
-    this.setState({classStyle:"bluecolor"})
+    if(this.state.classStyle==="redColor")
+    this.setState({classStyle:"blueColor"})
     else{
-      this.setState({classStyle:"redcolor"})
+      this.setState({classStyle:"redColor"})
     }
   }
 render(){
   return 
     <div id="main">
     <p className={this.state.classStyle}>Newton School </p>
-    <button id='butten' onclick={this.channgeClassStyle}>change style</button>
+    <button id='button' onclick={this.channgeClassStyle}>change style</button>
     </div>
   }
 }
