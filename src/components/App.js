@@ -14,8 +14,9 @@
 
 // export default App;
 
+
 import React, {Component} from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import '../styles/App.css';
 
 class App extends React.Component {
@@ -33,10 +34,9 @@ class App extends React.Component {
     }
   }
 render(){
-  return 
-    <div id="main">
+  return <div id="main">
     <p className={this.state.classStyle}>Newton School </p>
-    <button id='button' onClick={this.changeclassStyle}>change style</button>
+    <button id='button' onClick={this.changeClassStyle}>Change Style</button>
     </div>
   }
 }
