@@ -36,7 +36,7 @@ render(){
   return 
     <div id="main">
     <p className={this.state.classStyle}>Newton School </p>
-    <button id='button' onclick={this.channgeClassStyle}>change style</button>
+    <button id='button' onClick={this.channgeClassStyle}>change style</button>
     </div>
   }
 }
